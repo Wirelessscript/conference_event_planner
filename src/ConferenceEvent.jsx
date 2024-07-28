@@ -7,6 +7,7 @@ const ConferenceEvent = () => {
     const [showItems, setShowItems] = useState(false);
     const [numberOfPeople, setNumberOfPeople] = useState(1);
     const venueItems = useSelector((state) => state.venue);
+    const avItems = useSelector((state) => state.av);
     const dispatch = useDispatch();
     const remainingAuditoriumQuantity = 3 - venueItems.find(item => item.name === "Auditorium Hall (Capacity:200)").quantity;
 
@@ -67,6 +68,21 @@ const ConferenceEvent = () => {
       }
 
     return (
+        <>
+        {avItems.map((item, index) => (
+            <div className="av_data venue_main" key={index}>
+                <div className="img">
+                    <img src={item.img} alt={item.name} />
+                </div>
+                <div className="text"> {item.name} </div>
+                <div className="addons_btn">
+                    <button className="btn-warning" onClick={() => handleDecrementAvQuantity(index)}> &ndash; </button>
+                    <span className="quantity-value">{item.quantity}</span>
+                    <button className=" btn-success" onClick={() => handleIncrementAvQuantity(index)}> &#43; </button>
+                </div>
+            </div>
+        ))}
+        </>
         <>
             <navbar className="navbar_event_conference">
                 <div className="company_logo">Conference Expense Planner</div>

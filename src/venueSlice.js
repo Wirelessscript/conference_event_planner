@@ -5,31 +5,31 @@ export const venueSlice = createSlice({
   name: "venue",
   initialState: [
     {
-      img: "https://pixabay.com/images/download/chairs-2181916_640.jpg",
+      img: "https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Conference Room (Capacity:15)",
       cost: 3500,
       quantity: 0,
     },
     {
-      img: "https://pixabay.com/images/download/event-venue-1597531_640.jpg",
+      img: "https://cdn.pixabay.com/photo/2013/02/12/12/58/cia-80721_1280.jpg",
       name: "Auditorium Hall (Capacity:200)",
       cost: 5500,
       quantity: 0,
     },
     {
-      img: "https://pixabay.com/images/download/convention-center-3908238_640.jpg",
+      img: "https://images.pexels.com/photos/7750127/pexels-photo-7750127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Presentation Room (Capacity:50)",
       cost: 700,
       quantity: 0,
     },
     {
-      img: "https://pixabay.com/images/download/chairs-2181916_640.jpg",
+      img: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Large Meeting Room (Capacity:10)",
       cost: 900,
       quantity: 0,
     },
     {
-      img: "https://pixabay.com/images/download/laptops-593296_640.jpg",
+      img: "https://media.istockphoto.com/id/1077431262/photo/small-conference-room-with-whiteboard-on-blue-wall.jpg?s=1024x1024&w=is&k=20&c=UIHM1ID_nxdcxzhl8X4OkqUvVX83nm5Wr8ICYQ7COfk=",
       name: "Small Meeting Room (Capacity:5)",
       cost: 1100,
       quantity: 0,
